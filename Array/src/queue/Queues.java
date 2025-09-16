@@ -48,6 +48,16 @@ public class Queues {
 	            System.out.print(i+" ");
 	        }
 	        System.out.println();
+	        
+	        
+	        Queue<Integer>q3=new ArrayDeque<>();
+	        q3.add(9);
+	        q3.add(8);
+	        q3.add(4);
+	        q3.add(6);
+	        q3.add(1);
+	        q3.add(7);
+	        System.out.println(q3);
 	    }
 	}
 
