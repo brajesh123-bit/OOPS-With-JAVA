@@ -15,9 +15,10 @@ class student implements Comparable<student> {
     }
 
     @Override
-    public int compareTo(student s) {
+    public int compareTo(student that) {
         // Sort by name (lexicographically A → Z)
-        return this.name.compareTo(s.name);
+        //return this.name.compareTo(s.name);
+    	return this.rollno - that.rollno;
     }
 }
 public class start {
@@ -30,7 +31,7 @@ public static void main(String[] args) {
 	list.add(new student("Kushal",144));
 	System.out.println("Before comparing :"+list);
 	Collections.sort(list);
-	System.out.println("After Sorting :"+list);
+	System.out.println("After Sorting on the basis of roll no :"+list);
 
 }
 }
